@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Flex</title>
+    <title>Document</title>
     <style>
-         .container{
+        nav{
             display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
+            justify-content: space-around;
+            background-color: brown;
+            padding: 10px;
         }
-        .item{
-            padding: 12px 70px;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            background-color: burlywood;
+            border-radius: 10px;
+            text-shadow: 10px 10px 5px black;
+            box-shadow: 10px 10px 5px black;
         }
-        .item-1{
-            background-color: orange;
-        }
-        .item-2{
-            display: flex;
-            width: 140px;
-            background-color: white;
-            justify-content: center;
-        }
-        .item-3{  
-            background-color: green;
-        }
-        img{
-            width: 30px;
+        a:hover{
+            background-color: blue;
+            color: thistle;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item item-1"></div>
-        <div class="item-2">
-            <img src="./assets/chakra.png" alt="chakra">
+    <header>
+        <h1>Dasboard</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="../Task/flag.html">Task</a>
+        </nav>
+    </header>
+    <section id="home" style="height: 500px;">
+        <div>
+            <span>Home</span>
         </div>
-        <div class="item item-3"></div>
-    </div>
+    </section>
+    <section id="contact" style="height: 500px;">
+        <div>
+            <span>Contact</span>
+        </div>
+    </section>
+    <section id="skills" style="height: 500px;">
+        <div>
+            <span>Skills</span>
+        </div>
+    </section>
+    <section id="projects" style="height: 500px;">
+        <div>
+            <span>
+                Project
+            </span>
+        </div>
+    </section>
 
+    <footer>
+        <div>
+            <span>Footer Copyrights</span>
+        </div>
+    </footer>
 </body>
 </html>
